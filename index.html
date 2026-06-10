@@ -1,549 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haoran (George) Wu - Homepage</title>
+  <meta name="description" content="Personal homepage of Haoran (George) Wu, PhD student at the University of Cambridge working on computer architecture and FPGA-based hardware design.">
+  <meta name="keywords" content="Haoran Wu, George Wu, Cambridge, Imperial College, FPGA, computer architecture, RISC-V, hardware fuzzing">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-  <title>GeorgeWu</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/Favicon.jpeg" rel="icon">
-  <link href="assets/img/Favicon.jpeg" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a860a211d3.js" crossorigin="anonymous"></script>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: May 30 2023 with Bootstrap v5.3.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link rel="stylesheet" href="assets/css/font_sans_serif.css">
+  <link rel="stylesheet" href="assets/css/theme-luka.css">
 </head>
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/Selfi.jpeg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Haoran Wu</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://github.com/GeorgeWu1204" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.facebook.com/haoran.wu.927" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="CV.pdf" class="pdf"><i class="bx bxs-file-pdf"></i></a>
-          <a href="linkedin.com/in/haoran-wu-a51329215/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
+<body class="theme-luka">
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="./">Home</a>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Project</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Haoran Wu</h1>
-      <p>I'm <span class="typed" data-typed-items="Student, Hardware Engineer, Programmer"></span></p>
-      <p><a href="CV.pdf" class="btn btn-learn">Download CV <i class="icon-download4"></i></a></p>
-    </div>
-
-    <!-- <div style="width: 200px; height: 100px; border: 1px solid #000; padding: 10px;">
-      <a href="CV.pdf" download>
-        <button style="width: 100%; height: 100%;"> Download CV</button>
-      </a>
-    </div> -->
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p> Hi, my name is Haoran Wu, and I am currently a third-year student pursuing Electronic and Information Engineering at Imperial College London. 
-            I have a deep passion for exploring the intricate world of technology, particularly in the realms of Computer Architecture and FPGA. In the future, I am seriously considering to pursue a Ph.D. and further my research in these fields. </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/Selfi.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Hardware Engineer</h3>
-            <p class="fst-italic">
-              I am currently pursuing a research-style internship focused on FPGA technology. As a result, I consider myself a hardware engineer specializing in this area.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 Dec 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://github.com/GeorgeWu1204</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7529913387</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>London, UK</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master of Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>haoran.wu20@imperial.ac.uk</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Current Status:</strong> <span>Internship</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              My interests extend beyond electronics and encompass mechanics and physics as well. One notable experience involved conducting a fatigue test on the bogie frame for high-speed railways, allowing me to delve into the practical application of mechanical engineering principles.
-              </p>
-              <p>
-              I also have a passion for sports. I find enjoyment in soccer and basketball, relishing the thrill of both playing and spectating these dynamic team sports. Furthermore, I am an avid fan of Formula One Racing, captivated by the blend of engineering excellence, speed, and strategy that defines the sport.
-            
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2> Skills </h2>
-          <p> During my continuous study at the college and internship, I have mastered the following skills.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Verilog & SystemVerilog <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> C/C++ <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> Tensorflow & Pytorch <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill"> Functional Programming (Chisel) <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> FPGA tool (Vivado, Quartus) <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"> Computer Architecture <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            
-
-            <div class="progress">
-              <span class="skill"> Bash Script, Makefile, Tcl <i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-      
-        
-
-        <div class="row">
-          <div class="col-lg-6">
-              <h3 class="resume-title"> Education </h3>
-                  <div class="resume-item">
-                    <h4>MEng of Electronic and Information Engineering</h4>
-                    <h5>2020 - Present</h5>
-                    <p><em>Imperial College London, London, UK</em></p>
-                    <ul>
-                      <li> Dean's list (Top 10% in the department) 2020/2021 </li>
-                      <li> Dean's list (Top 10% in the department) 2021/2022 </li>
-                      <li> Prize for runnners up of second year group project (Second place in the department) 2021/2022</li>
-                      <li> Module of Interest 
-                        <ul>
-                          <li> Advanced Computer Architecture and Compiler </li>
-                          <li> Machine Learning and Deep Learning</li>
-                          <li> Digital System Design</li>
-                        </ul>
-
-
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="resume-item">
-                    <h4>Foundation Program</h4>
-                    <h5>2019 - 2020</h5>
-                    <p><em>University College London, London, UK</em></p>
-                    <ul>
-                      <li> Achieved average grades of 88/100 </li>
-                      <li> Graduated with distinction </li>
-                    </ul>
-                  </div>
-                  <div class="resume-item">
-                    <h4>High School Graduate</h4>
-                    <h5>2016 - 2018</h5>
-                    <p><em> Shude High School, Chengdu, China</em></p>
-                    <ul>
-                      <li> Achieved average grades of 90/100 for every courses</li>
-                      <li> Graduated with distinction </li>
-                      <li> Received National First Prize in Chinese Physics Competition in 2017. </li>
-                      <li> Received Top 10% in American Physics Bowl Competition in 2018. </li>
-                      <li> Received Second Prize in Sichuan Mathematic Competition in 2018. </li>
-                    </ul>
-                  </div>
-                  <h3 class="resume-title"> Volunteering </h3>
-                  <div class="resume-item">
-                    <h4>Cleft Lip</h4>
-                    <h5>June 2017</h5>
-                    <p><em> Ziyang, Sichuan, China</em></p>
-                    <ul>
-                      <li> Assists Patient with Cleft Lip in Registering for Surgery</li>
-                    </ul>
-                  </div>
-            </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title">Professional Experience</h3>
-                <div class="resume-item">
-                  <h4> Academic Research (Industrial Placement) </h4>
-                  <h5>April 2023 - Present</h5>
-                  <p><em>Institute of Computing Technology Chinese Academy of Sciences </em></p>
-                  <p><em>Supervisor: Dr. Kan Shi </em></p>
-                  <ul>
-                    <li>Develop a hardware fuzzer implemented on FPGA to automatically generate stimuli to the RISC-V processor.</li>
-                    <li>Develop a verification system executed fully on Xilinx Zynq SoC. </li>
-                  </ul>
-                </div>
-                <div class="resume-item">
-                  <h4> Academic Research (Undergraduate Research Opportunities Programme) </h4>
-                  <h5>June 2022 - Sep 2022</h5>
-                  <p><em>Imperial College, London, UK</em></p>
-                  <p><em>Supervisor: Dr. Davis James </em></p>
-                  <ul>
-                    <li> Developed an object detection system with Binary Neural Networks based on FPGAs </li>
-                    <li> Used Residual Binary Network and Tensorflow to train and convert the Yolo configuration into binary networks</li>
-                  </ul>
-                </div>
-                <div class="resume-item">
-                  <h4> Academic Research </h4>
-                  <h5>June 2019 - July 2019 & July 2021 - Sep 2021 </h5>
-                  <p><em>Southwest Jiaotong University State Key Laboratory of Traction Power, Chengdu, China</em></p>
-                  <p><em>Supervisor: Prof. Pingbo Wu </em></p>
-                  <ul>
-                    <li> Tested the relative displacement and interaction force of the High Temperature Superconducting Maglev and published a paper for this research.</li>
-                    <li> Participated in fatigue experiments on bogie frame,coupler,damper of the bullet train.</li>
-                    <li> Designed a lighter coupler with high modulus capacity using carbon fiber and patented for it.</li>
-                  </ul>
-                </div>
-
-                <div class="resume-item">
-                  <h4> Academic Research </h4>
-                  <h5>June 2018 - July 2018 </h5>
-                  <p><em>Laboratory of Tribology, Southwest Jiaotong University, China</em></p>
-                  <p><em>Supervisor: Prof. Linmao Qian </em></p>
-                  <ul>
-                    <li> Utilize Atomic Force Microscopy (AFM) for nanoscale investigation of the influence of adhesion on the maximum static friction force under different atmospheric pressure.</li>
-
-                  </ul>
-                </div>
-            </div>
-        </div>
-          
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Projects</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-Year1">Year 1 Project</li>
-              <li data-filter=".filter-Year2">Year 2 Project</li>
-              <li data-filter=".filter-Year3">Year 3 Project</li>
-              <li data-filter=".filter-Intern">Intern Project</li>
-            </ul>
-          </div>
-        </div>
-       
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <!-- High Temperature Superconducting Maglev -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Intern">
-
-            <a href="HTS_Maglev.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-                <div class="portfolio-wrap">
-                <h5>2019</h5>
-                <div class="portfolio-info">
-                  <h4 style = "text-align: center;">High Temeprature Superconducting Maglev </h4>
-                  </div>
-                  <div class="portfolio-img">
-                    <img src="assets/img/portfolio/Maglev/HTS_Maglev.jpeg" class="img-fluid" alt="">
-                  </div>
-                </div>
-              </i>
-            </a>
-          </div>
-        
-          <!-- Circuit Simulator -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year1">
-            <a href="Circuit.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-                    <div class="portfolio-wrap">
-                        <h5>2021</h5>
-                        <div class="portfolio-info">
-                          <h4 style = "text-align: center;">Circuit Simulator</h4>
-                        </div>
-                        <div class="portfolio-img">
-                          <img src="assets/img/portfolio/Circuit.png" class="img-fluid" alt="">
-                        </div>
-                        
-                    </div>
-              </i>
-            </a>
-          </div>
-           <!-- MIPS CPU -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year2">
-            <a href="MIPS.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-              
-              
-                <div class="portfolio-wrap">
-                  <h5>2021</h5>
-                  
-                  <div class="portfolio-info">
-                    <h4 style = "text-align: center;">MIPS CPU</h4>
-                  </div>
-                  <div class="portfolio-img">
-                    <img src="assets/img/portfolio/MIPS.png">
-                  </div>
-                </div>
-          </i></a>
-          </div>
-
-          <!-- FPGA Game -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year2">
-            <a href="FPGA_Game.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-              
-              <div class="portfolio-wrap">
-                <h5>2022</h5>
-                <div class="portfolio-info">
-                  <h4 style = "text-align: center;">Formula 1 Game Based on FPGA</h4>
-                </div>
-                <div class="portfolio-img">
-                  <img src="assets/img/portfolio/FPGA/formula-1-logo.svg">
-                </div>
-                
-              </div>
-
-            </i></a>
-
-          </div>
-
-          <!-- MIPS Compiler -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year2">
-            <a href="Compiler.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-                <div class="portfolio-wrap">
-                  <h5>2022</h5>
-                  <div class="portfolio-info">
-                    <h4 style = "text-align: center;">MIPS Compiler</h4>
-                  </div>
-                  <div class="portfolio-img">
-                    <img src="assets/img/portfolio/Compiler.png">
-                  </div>
-                </div>
-                
-            </i></a>
-          </div>
-
-          <!-- Mars Rover -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year2">
-            <a href="Mars_Rover.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-            <div class="portfolio-wrap">
-              <h5>2022</h5>
-              <div class="portfolio-info">
-                <h4 style = "text-align: center;">Mars Rover</h4>
-              </div>
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/Mars/Mars_logo.png">
-              </div>
-            </div>
-          </i></a>
-          </div>
-
-          <!-- Baby Cradle -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year3">
-            <a href="Cradle.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-            <div class="portfolio-wrap">
-              <h5>2023</h5>
-              <div class="portfolio-info">
-                <h4 style = "text-align: center;">Baby Cradle</h4>
-              </div>
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/cradle.png">
-              </div>
-            </div>
-          </i></a>
-          </div>
-
-          <!-- Music Synthesiser -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Year3">
-            <a href="Music_Synthesis.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link" style="color: black;">
-            <div class="portfolio-wrap">
-              <h5>2023</h5>
-              <div class="portfolio-info">
-                <h4 style = "text-align: center;"> Music Synthesizer </h4>
-              </div>
-              <div class="portfolio-img">
-                <img src="assets/img/portfolio/Music/Music_Logo.png">
-              </div>
-            </div>
-          </i></a>
-          </div>
-
-          <!-- Yolo -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Intern">
-            <a href="Yolo.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details">
-              <i class="bx bx-link">
-                <div class="portfolio-wrap" style="color: black;">
-                  <h5>2022</h5>
-                  <div class="portfolio-info">
-                    <h4 style = "text-align: center;"> Yolo Network on FPGA </h4>
-                  </div>
-                  <div class="portfolio-img">
-                    <img src="assets/img/portfolio/fpga.png">
-                  </div>
-                </div>
-              </i></a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </nav>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div class="wrapper">
+    <header class="sidebar">
+      <div class="profile-card">
+        <a class="image avatar">
+          <img src="assets/img/selfie.jpg" alt="Haoran Wu">
+        </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        <h1 class="site-name">Haoran (George) Wu</h1>
+        <p class="site-email">hw691@cam.ac.uk</p>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+        <div class="social-icons">
+          <a href="mailto:hw691@cam.ac.uk" title="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://scholar.google.co.uk/citations?user=hABpWP8AAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://github.com/GeorgeWu1204" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/haoran-wu-a51329215/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </header>
 
+    <section class="content">
+      <div class="section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-body">
+          <p>Hi! I'm <strong>Haoran Wu (George)</strong> (邬浩冉), a second-year PhD student in the Department of Computer Science and Technology at the <strong>University of Cambridge</strong>, supervised by Prof. Robert Mullins. My PhD is funded by the Scaling Compute project via <strong>ARIA</strong>.</p>
+          <p>My current research interests cover <strong>NPU design</strong>, <strong>ML systems</strong>, and <strong>ML inference acceleration</strong>. Previously I worked on <strong>RISC-V verification</strong> and <strong>design-space exploration for customisable processors</strong>.</p>
+          <p><strong><a href="assets/cv/" target="_blank" rel="noopener">Download my CV</a></strong></p>
+        </div>
+      </div>
+
+      <div class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="section-body">
+          <div class="card">
+            <div class="experience-item">
+              <img src="assets/img/institutions/cambridge.webp" alt="University of Cambridge" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>University of Cambridge</strong></p>
+                <p class="exp-detail">Ph.D. in Computer Architecture</p>
+                <p class="exp-detail">Supervised by Prof. Robert Mullins and Prof. Timothy Jones.</p>
+                <p class="exp-period">2024 - Present</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="experience-item">
+              <img src="assets/img/institutions/imperial.png" alt="Imperial College London" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>Imperial College London</strong></p>
+                <p class="exp-detail">MEng in Electronic and Information Engineering</p>
+                <p class="exp-detail">Graduated with First Class Honours.</p>
+                <p class="exp-detail">Dean's List (Top 10% in the department, 2020/21, 2021/22 &amp; 2023/24). Runner-up, Second-Year Group Project.</p>
+                <p class="exp-detail">Master's thesis supervised by Prof. Wayne Luk and Dr. Ce Guo.</p>
+                <p class="exp-period">2020 - 2024</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="section-body">
+          <div class="card timeline-item">
+            <div class="experience-item">
+              <img src="assets/img/institutions/ict.webp" alt="ICT CAS" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>Institute of Computing Technology, Chinese Academy of Sciences</strong></p>
+                <p class="exp-detail">Research Intern</p>
+                <p class="exp-detail"><em>Advisor:</em> Dr. Kan Shi</p>
+                <p class="exp-detail">Built an FPGA-based hardware fuzzer that automatically generates stimuli for RISC-V processors, and developed a verification system running fully on a Xilinx Zynq SoC.</p>
+                <p class="exp-period">Apr 2023 - Sep 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="experience-item">
+              <img src="assets/img/institutions/imperial.png" alt="Imperial College London" class="institution-logo">
+              <div class="experience-content">
+                <p class="exp-title"><strong>Imperial College London &mdash; UROP</strong></p>
+                <p class="exp-detail">Undergraduate Research Opportunities Programme</p>
+                <p class="exp-detail"><em>Advisor:</em> Dr. James Davis</p>
+                <p class="exp-detail">Developed an FPGA-based object detection system using Binary Neural Networks; trained and converted a YOLO model into a Residual Binary Network with TensorFlow.</p>
+                <p class="exp-period">Jun 2022 - Sep 2022</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section" id="publications">
+        <h2 class="section-title">Selected Publications</h2>
+        <div class="section-body">
+          <style>
+            .pub-entry {
+              display: flex;
+              border: 1px solid var(--border-color, #e5e5e5);
+              border-radius: 8px;
+              padding: 12px 16px;
+              margin-bottom: 12px;
+              align-items: center;
+              font-size: 0.95em;
+              line-height: 1.5;
+              background: var(--card-bg, transparent);
+            }
+            .pub-venue {
+              width: 80px;
+              flex: 0 0 80px;
+              font-weight: 700;
+              color: #fff;
+              background: #444;
+              border-radius: 5px;
+              padding: 6px 10px;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 0.9em;
+              letter-spacing: 0.02em;
+            }
+            .pub-content {
+              flex: 1;
+              padding: 0 16px;
+              min-width: 0;
+            }
+            .pub-title { font-weight: 600; margin-bottom: 4px; }
+            .pub-authors { margin: 2px 0; }
+            .pub-meta { font-style: italic; opacity: 0.85; font-size: 0.92em; }
+            .pub-eq { font-size: 0.85em; opacity: 0.75; margin-top: 2px; }
+            .pub-year {
+              min-width: 56px;
+              color: #888;
+              font-weight: 700;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @media (max-width: 640px) {
+              .pub-entry { flex-direction: column; align-items: stretch; }
+              .pub-venue { width: auto; flex: none; margin-bottom: 8px; align-self: flex-start; padding: 4px 10px; }
+              .pub-content { padding: 0; }
+              .pub-year { justify-content: flex-start; margin-top: 6px; }
+            }
+          </style>
+
+          <div class="pub-entry">
+            <div class="pub-venue">ISCA</div>
+            <div class="pub-content">
+              <div class="pub-title">Combating the Memory Walls: Optimization Pathways for Long-Context Agentic LLM Inference</div>
+              <div class="pub-authors"><strong>H Wu</strong>, C Xiao, J Nie, X Guo, B Lou, JTH Wong, Z Mo, C Zhang, P Forys, <em>et al.</em></div>
+              <div class="pub-meta">The 53rd International Symposium on Computer Architecture (ISCA'26), 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">arXiv</div>
+            <div class="pub-content">
+              <div class="pub-title">MemExplorer: Navigating the Heterogeneous Memory Design Space for Agentic Inference NPUs</div>
+              <div class="pub-authors"><strong>H Wu</strong>, Z Cao, Y Lai, B Lou, J Nie, C Xiao, T Adeniran, P Forys, K Johar, <em>et al.</em></div>
+              <div class="pub-meta">arXiv preprint <a href="https://arxiv.org/abs/2604.16007">arXiv:2604.16007</a>, 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">ICML</div>
+            <div class="pub-content">
+              <div class="pub-title">KernelCraft: Benchmarking for Agentic Close-to-Metal Kernel Generation on Emerging Hardware</div>
+              <div class="pub-authors">J Nie, <strong>H Wu</strong>, Y Lai, Z Cao, C Zhang, B Lou, E Wang, J Cheng, TM Jones, <em>et al.</em> (equal contribution: J Nie, <strong>H Wu</strong>)</div>
+              <div class="pub-meta">The Forty-Third International Conference on Machine Learning (ICML'26), 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">HPCA</div>
+            <div class="pub-content">
+              <div class="pub-title">TurboFuzz: FPGA Accelerated Hardware Fuzzing for Processor Agile Verification</div>
+              <div class="pub-authors">Y Zhong, <strong>H Wu</strong>, X Li, S Wang, D Boland, Y Bao, K Shi (equal contribution: Y Zhong, <strong>H Wu</strong>)</div>
+              <div class="pub-meta">IEEE International Symposium on High-Performance Computer Architecture (HPCA'26), 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">FPL</div>
+            <div class="pub-content">
+              <div class="pub-title">ASPO: Constraint-Aware Bayesian Optimization for FPGA-based Soft Processors</div>
+              <div class="pub-authors"><strong>H Wu</strong>, C Guo, W Luk, R Mullins</div>
+              <div class="pub-meta">35th International Conference on Field-Programmable Logic and Applications (FPL'25), 2025</div>
+            </div>
+            <div class="pub-year">2025</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">arXiv</div>
+            <div class="pub-content">
+              <div class="pub-title">TriAxialKV: Toward Extreme Low-Precision KV-Cache Quantization for Agentic Inference Tasks</div>
+              <div class="pub-authors">H Shen, <strong>H Wu</strong>, Y Zhao, R Mullins</div>
+              <div class="pub-meta">arXiv preprint <a href="https://arxiv.org/abs/2605.17170">arXiv:2605.17170</a>, 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">arXiv</div>
+            <div class="pub-content">
+              <div class="pub-title">Beyond GEMM-Centric NPUs: Enabling Efficient Diffusion LLM Sampling</div>
+              <div class="pub-authors">B Lou, <strong>H Wu</strong>, Y Lai, J Nie, C Xiao, X Guo, R Antonova, R Mullins, A Zhao</div>
+              <div class="pub-meta">arXiv preprint <a href="https://arxiv.org/abs/2601.20706">arXiv:2601.20706</a>, 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">arXiv</div>
+            <div class="pub-content">
+              <div class="pub-title">Rethinking Compute Substrates for 3D-Stacked Near-Memory LLM Decoding: Microarchitecture-Scheduling Co-Design</div>
+              <div class="pub-authors">C Ai, Y Zhang, <strong>H Wu</strong>, Y Pan, L Zhao, W Ou</div>
+              <div class="pub-meta">arXiv preprint <a href="https://arxiv.org/abs/2604.04253">arXiv:2604.04253</a>, 2026</div>
+            </div>
+            <div class="pub-year">2026</div>
+          </div>
+
+          <div class="pub-entry">
+            <div class="pub-venue">HEART</div>
+            <div class="pub-content">
+              <div class="pub-title">Resource-Constraint Bayesian Optimization for Soft Processors on FPGAs</div>
+              <div class="pub-authors">C Guo, <strong>H Wu</strong>, W Luk</div>
+              <div class="pub-meta">14th International Symposium on Highly Efficient Accelerators and Reconfigurable Computing (HEART'24), 2024</div>
+            </div>
+            <div class="pub-year">2024</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>
+        &copy; 2026 Haoran Wu. All rights reserved.
+        <br>
+        <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
+      </p>
+    </footer>
+  </div>
+
+  <script src="assets/js/scale.fix.js"></script>
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('themeToggle');
+      const icon = themeToggle.querySelector('i');
+
+      function setTheme(isDark) {
+        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        icon.classList.toggle('fa-sun', isDark);
+        icon.classList.toggle('fa-moon', !isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      }
+
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(savedTheme ? savedTheme === 'dark' : prefersDark);
+
+      themeToggle.addEventListener('click', function() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        setTheme(!isDark);
+      });
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        document.querySelectorAll('.section').forEach(function(el) {
+          el.classList.add('visible');
+        });
+      }
+    })();
+  </script>
 </body>
-
 </html>
